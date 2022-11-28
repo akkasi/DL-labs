@@ -28,13 +28,7 @@ class: center, middle
 
 # Recommender Systems &amp; Embeddings
 
-Charles Ollion - Olivier Grisel
 
-.affiliations[
-  ![IPP](images/logo_ipp.jpeg)
-  ![Inria](images/inria-logo.png)
-  ![UPS](images/Logo_Master_Datascience.png)
-]
 
 ---
 # Outline
@@ -219,21 +213,7 @@ Alternatively, dot product (unnormalized) is used in practice as a pseudo simila
 ???
 https://colah.github.io/posts/2014-10-Visualizing-MNIST/
 ---
-# t-Distributed Stochastic Neighbor Embedding
 
-
- - Unsupervised, low-dimension, non-linear projection
- - Optimized to preserve relative distances between nearest neighbors
- - Global layout is not necessarily meaningful
-
-
---
-
-### t-SNE projection is non deterministic (depends on initialization)
- - Critical parameter: perplexity, usually set to 20, 30
- - See http://distill.pub/2016/misread-tsne/
-
----
 #Example word vectors
 
 .center[
@@ -242,14 +222,6 @@ https://colah.github.io/posts/2014-10-Visualizing-MNIST/
 ]
 
 ---
-# Visualizing Mnist
-
-.center[
-          <img src="images/mnist_tsne.jpg" style="width: 400px;" />
-]
-
----
-
 class: middle, center
 
 # Dropout Regularization
@@ -392,7 +364,7 @@ Spotify, books on Amazon, related apps on app stores,
 ### Personalized ads and RTB
 
 ---
-# RecSys 101
+# RecSys 
 
 ### Content-based vs Collaborative Filtering (CF)
 
@@ -545,73 +517,9 @@ Alternative way to deal with Implicit Feedback:
 - the output is a classification loss: 1 for the next movie being
   watched by the user.
 
-
 ---
 class: middle, center
 
-# Ethical Considerations of Recommender Systems
-
----
-# Ethical Considerations
-
-#### Amplification of existing discriminatory and unfair behaviors / bias
-
-- Example: gender bias in ad clicks (fashion / jobs)
-- Using the firstname as a predictive feature
-
---
-
-#### Amplification of the filter bubble and opinion polarization
-
-- Personalization can amplify "people only follow people they agree with"
-- Optimizing for "engagement" promotes content that causes strong
-  emotional reaction (and turns normal users into *haters*?)
-- RecSys can exploit weaknesses of some users, lead to addiction
-- Addicted users clicks over-represented in future training data
-
----
-# Call to action
-
-### Designing Ethical Recommender Systems
-
-- Wise modeling choices (e.g. use of "firstname" as feature)
-- Conduct internal audits to detect fairness issues: [SHAP](
-  https://github.com/slundberg/shap), [Integrated Gradients](
-    https://github.com/hiranumn/IntegratedGradients),
-  [fairlearn.org](https://fairlearn.org/)
-- Learning [representations that enforce fairness](
-  https://arxiv.org/abs/1511.05897)?
-
---
-
-### Transparency
-
-- Educate decision makers and the general public
-- How to allow users to assess fairness by themselves?
-- How to allow for independent audits while respecting the privacy of users?
-
---
-
-.center[
-### Active Area of Research
-]
-
-???
-# Fairness
-
-Censoring Representations with an Adversary
-Harrison Edwards, Amos Storkey, ICLR 2016
-https://arxiv.org/abs/1511.05897
-
-# Transparency
-
-- http://www.datatransparencylab.org/
-- TransAlgo initiative in France
-
----
-class: middle, center
-
-# Lab 3: Back here in 15min!
 
     </textarea>
     <style TYPE="text/css">
